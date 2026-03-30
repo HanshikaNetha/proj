@@ -1,0 +1,13 @@
+package com.example.notificationService.enums;
+
+public enum NotificationType {
+    STARTUP_CREATED,
+    STARTUP_APPROVED,
+    STARTUP_REJECTED,
+    INVESTMENT_CREATED,
+    INVESTMENT_APPROVED,
+    INVESTMENT_REJECTED,
+    TEAM_INVITE_SENT,
+    TEAM_INVITE_ACCEPTED,
+    TEAM_INVITE_REJECTED
+}
