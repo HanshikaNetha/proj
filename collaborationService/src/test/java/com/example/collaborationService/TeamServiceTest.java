@@ -55,7 +55,6 @@ public class TeamServiceTest {
         );
     }
 
-    // ================= INVITE =================
 
     @Test
     void testInvite_Success() {
@@ -97,7 +96,6 @@ public class TeamServiceTest {
                 () -> teamService.inviteTeamMember(new TeamInviteRequest(10L, 2L, null)));
     }
 
-    // ================= ACCEPT =================
 
     @Test
     void testAccept_Success() {
@@ -134,7 +132,6 @@ public class TeamServiceTest {
                 () -> teamService.accept(1L));
     }
 
-    // ================= REJECT =================
 
     @Test
     void testReject_Success() {
@@ -155,7 +152,6 @@ public class TeamServiceTest {
         assertNotNull(result);
     }
 
-    // ================= GET MEMBERS =================
 
     @Test
     void testGetTeamMembers() {

@@ -42,7 +42,6 @@ public class NotificationServiceTest {
         );
     }
 
-    // ================= CREATE =================
 
     @Test
     void testCreateNotification() {
@@ -58,7 +57,6 @@ public class NotificationServiceTest {
         verify(notificationRepository).save(any(Notification.class));
     }
 
-    // ================= GET USER NOTIFICATIONS =================
 
     @Test
     void testGetUserNotifications_Success() {
@@ -90,7 +88,6 @@ public class NotificationServiceTest {
                 () -> notificationService.getUserNotificationsById(1L));
     }
 
-    // ================= MARK AS READ =================
 
     @Test
     void testMarkAsRead_Success() {

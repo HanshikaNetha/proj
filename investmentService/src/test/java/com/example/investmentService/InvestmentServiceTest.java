@@ -58,7 +58,6 @@ public class InvestmentServiceTest {
         SecurityContextHolder.getContext().setAuthentication(auth);
     }
 
-    // ================= CREATE =================
 
     @Test
     void testCreateInvestment_Success() {
@@ -108,7 +107,6 @@ public class InvestmentServiceTest {
                 investmentService.createInvestment(new InvestmentCreateRequest()));
     }
 
-    // ================= APPROVE =================
 
     @Test
     void testApproveInvestment_Success() {
@@ -146,7 +144,6 @@ public class InvestmentServiceTest {
                 () -> investmentService.approveInvestment(1L));
     }
 
-    // ================= COMPLETE =================
 
     @Test
     void testCompleteInvestment_Success() {
@@ -184,7 +181,6 @@ public class InvestmentServiceTest {
                 () -> investmentService.completeInvestment(1L));
     }
 
-    // ================= GET BY STARTUP =================
 
     @Test
     void testGetInvestmentsByStartup_Success() {
@@ -224,7 +220,6 @@ public class InvestmentServiceTest {
                 () -> investmentService.getInvestmentsByStartup(10L));
     }
 
-    // ================= MY INVESTMENTS =================
 
     @Test
     void testGetMyInvestments() {
@@ -246,7 +241,6 @@ public class InvestmentServiceTest {
         assertEquals(1, result.size());
     }
 
-    // ================= NOT FOUND =================
 
     @Test
     void testApproveInvestment_NotFound() {

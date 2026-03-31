@@ -48,7 +48,6 @@ public class AuthServiceTest {
     @InjectMocks
     private AuthService authService;
 
-    // ================= REGISTER =================
 
     @Test
     void testRegister_Success() {
@@ -106,7 +105,6 @@ public class AuthServiceTest {
         assertThrows(UnauthorizedRoleException.class, () -> authService.register(request));
     }
 
-    // ================= LOGIN =================
 
     @Test
     void testLogin_Success() {
@@ -162,7 +160,6 @@ public class AuthServiceTest {
         assertThrows(InvalidCredintialsException.class, () -> authService.login(request));
     }
 
-    // ================= REFRESH TOKEN =================
 
     @Test
     void testRefreshToken_Success() {
@@ -208,7 +205,6 @@ public class AuthServiceTest {
                 () -> authService.refreshToken(new RefreshTokenRequest("abc")));
     }
 
-    // ================= LOGOUT =================
 
     @Test
     void testLogout_Success() {

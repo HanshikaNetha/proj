@@ -52,7 +52,6 @@ public class MessageServiceTest {
         );
     }
 
-    // ================= CREATE CONVERSATION =================
 
     @Test
     void testCreateConversation_New() {
@@ -120,7 +119,6 @@ public class MessageServiceTest {
                 () -> messagingService.createConversation(new CreateConversationRequest(2L)));
     }
 
-    // ================= SEND MESSAGE =================
 
     @Test
     void testSendMessage_Success() {
@@ -159,7 +157,6 @@ public class MessageServiceTest {
                 () -> messagingService.sendMessage(new SendMessageRequest(1L, "Hi")));
     }
 
-    // ================= GET MESSAGES =================
 
     @Test
     void testGetMessages_Success() {
