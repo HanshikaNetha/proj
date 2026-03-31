@@ -11,7 +11,6 @@ import com.example.Auth.UserService.repository.UserDetailsRepository;
 import com.example.Auth.UserService.repository.UserRegistrationRepository;
 import com.example.Auth.UserService.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.java.Log;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
